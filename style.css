@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: rgb(222, 240, 119);
+   //background-image: url(images/food.png);
+}
+
+nav {
+    background-color: #3c3c41;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a {
+    color: rgb(59, 230, 25);
+    text-decoration:aliceblue;
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    height: 400px;
+    background: url(images/sin.jpg) center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.Featured-content {
+    display: flex;
+    text-align:justify;
+    justify-content: center;
+    gap: 60px;
+}
+.Featured-recipe img {
+    width: 16;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.recipe-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    
+}
+
+.recipe-card {
+    background: rgba(35, 226, 200, 0.925);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+}
+
+.recipe-content {
+    padding: 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: rgb(128, 188, 228);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
